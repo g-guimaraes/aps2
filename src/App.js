@@ -1,7 +1,5 @@
 import React, { Component } from "react"
-import namer from "color-namer"
 import { extract } from "./colorUtils.js"
-import logo from "./logo.svg"
 import "./App.css"
 
 const arffHeader = `@RELATION personagem 

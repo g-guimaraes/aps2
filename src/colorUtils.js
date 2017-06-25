@@ -1,11 +1,11 @@
 import Vibrant from "node-vibrant"
 import namer from "color-namer"
-import colors from "color-namer/lib/colors/basic"
+import colors from "color-namer/lib/colors/ntc"
 
 const getNumber = ({ hex }) => colors.findIndex(color => color.hex === hex)
 
 const getColorNumber = color =>
-  getNumber(namer(color ? color.getRgb() : defaultColor).basic[0])
+  getNumber(namer(color ? color.getRgb() : defaultColor).ntc[0])
 
 const defaultColor = [122, 122, 122]
 
