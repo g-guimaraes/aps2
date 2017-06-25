@@ -20,7 +20,7 @@ const arffHeader = `@RELATION personagem
 class App extends Component {
   constructor() {
     super()
-    this.state = { result: "Carregue as imagens" }
+    this.state = { result: "Escolha as imagens" }
   }
 
   onChangeImages = event => {
@@ -40,7 +40,7 @@ class App extends Component {
   render() {
     return (
       <div className="App">
-        <h1>Selecione as imagens</h1>
+        <h1>Image Extractor</h1>
         <input
           type="file"
           multiple
